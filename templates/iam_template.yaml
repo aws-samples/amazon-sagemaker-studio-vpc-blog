@@ -23,6 +23,7 @@ Resources:
             Action:
               - logs:CreateLogGroup
               - logs:CreateLogStream
+              - logs:DescribeLogStreams
               - logs:PutLogEvents
               - logs:GetLogEvents
             Resource:
