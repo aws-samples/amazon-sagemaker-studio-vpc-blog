@@ -27,7 +27,7 @@ Resources:
       Parameters:
         ProjectName: !Ref ProjectName
         DataBucket: !GetAtt S3.Outputs.DataBucket
-      TemplateURL:  https://sagemaker-studio-vpcmode-2020-09-15.s3-us-east-2.amazonaws.com/templates/iam_template.yaml 
+      TemplateURL:  https://github.com/aws-samples/amazon-sagemaker-studio-vpc-blog/blob/main/templates/iam_template.yaml 
   #================================================================================
   # S3 BUCKETS - DATA BUCKET AND MODEL BUCKET 
   #================================================================================
@@ -38,7 +38,7 @@ Resources:
       Parameters:
         ProjectName: !Ref ProjectName
         DataBucketName: !Sub ${ProjectName}-data-${AWS::AccountId}
-      TemplateURL:  https://sagemaker-studio-vpcmode-2020-09-15.s3-us-east-2.amazonaws.com/templates/s3_template.yaml 
+      TemplateURL:  https://github.com/aws-samples/amazon-sagemaker-studio-vpc-blog/blob/main/templates/s3_template.yaml 
   #================================================================================
   # VPC WITH A PRIVATE SUBNET AND SECURITY GROUP 
   #================================================================================
@@ -49,4 +49,4 @@ Resources:
         ProjectName: !Ref ProjectName
         VpcCIDR: !Ref VpcCIDR
         PrivateSubnetCIDR: !Ref PrivateSubnetCIDR
-      TemplateURL:  https://sagemaker-studio-vpcmode-2020-09-15.s3-us-east-2.amazonaws.com/templates/vpc_template.yaml 
+      TemplateURL:  https://github.com/aws-samples/amazon-sagemaker-studio-vpc-blog/blob/main/templates/vpc_template.yaml 
