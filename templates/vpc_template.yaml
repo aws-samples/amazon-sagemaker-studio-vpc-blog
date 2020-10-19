@@ -47,6 +47,13 @@ Resources:
         - Key: Name
           Value: !Sub ${ProjectName}-security-group
 
+  SecurityGroupIngress:
+    Type: AWS::EC2::SecurityGroupIngress
+    Properties:
+      IpProtocol: '-1'
+      GroupId: !Ref SecurityGroup
+      SourceSecurityGroupId: !Ref SecurityGroup
+
   #########################
   #
   # ROUTE TABLES
