@@ -1,0 +1,2 @@
+https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/review?stackName=studio-vpc-infra&templateURL=https://aws-ml-blog.s3.amazonaws.com/artifacts/Securing-Amazon-SageMaker-Studio-connectivity-using-private-vpc/sm-studio-vpc-infra.template.yaml
+
