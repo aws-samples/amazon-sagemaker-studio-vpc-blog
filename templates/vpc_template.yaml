@@ -92,7 +92,7 @@ Resources:
       FromPort: 443
       ToPort: 443
       GroupId: !Ref VPCEndpointSecurityGroup
-      SourceSecurityGroupId: !Ref VPCEndpointSecurityGroup
+      SourceSecurityGroupId: !Ref SecurityGroup
 
   VPCEndpointS3:
     Type: AWS::EC2::VPCEndpoint
