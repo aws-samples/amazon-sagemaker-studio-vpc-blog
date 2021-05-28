@@ -61,6 +61,8 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: !Ref DataBucketName
+      VersioningConfiguration:
+        Status: Enabled
       AccessControl: Private
       PublicAccessBlockConfiguration:
         BlockPublicAcls: TRUE
@@ -77,8 +79,6 @@ Resources:
     Type: 'AWS::S3::BucketPolicy'
     Properties:
       Bucket: !Ref DataBucket
-      VersioningConfiguration:
-        Status: Enabled
       PolicyDocument:
         Statement:
           - Action:
