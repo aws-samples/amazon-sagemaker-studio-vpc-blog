@@ -77,6 +77,8 @@ Resources:
     Type: 'AWS::S3::BucketPolicy'
     Properties:
       Bucket: !Ref DataBucket
+      VersioningConfiguration:
+        Status: Enabled
       PolicyDocument:
         Statement:
           - Action:
