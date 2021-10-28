@@ -42,7 +42,7 @@ Resources:
           - Sid: KMSAccess
             Effect: Allow
             Action:
-              - kms:CreateGrant'
+              - 'kms:CreateGrant'
               - 'kms:Decrypt'
               - 'kms:DescribeKey'
               - 'kms:Encrypt'
